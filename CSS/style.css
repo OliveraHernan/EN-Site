@@ -19,6 +19,12 @@ body{
 	background: url(../Images/background-banner.png);
 	background-size: cover;
 }
+.banner a {
+	text-decoration: none;
+}
+.banner a:visited, a:link{
+	color: red;
+}
 
 .banner-title{	
 	text-align: center;
@@ -34,6 +40,14 @@ body{
 	background: #111;
 	height: 30%;
 }
+.nav-list a{
+	text-decoration: none;
+}
+
+.nav-list a:visited,a:link{
+	color: #fff;
+}
+
 .nav-list{
 	display: flex;
 	justify-content: space-evenly;
@@ -41,6 +55,7 @@ body{
 	list-style: none;
 	color: #fff;
 	font-size: 24px;
+
 }
 
 /*---------------- Content ------------------*/
@@ -91,6 +106,15 @@ body{
     padding: 36px 16px 8px;
 	background-image: linear-gradient(to bottom, transparent, #000);
 	color: #fff;
+}
+
+.text-category{
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 700;
+}
+.text-title{
+
 }
 
 /*---------------- Footer ------------------*/
