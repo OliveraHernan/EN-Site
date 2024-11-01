@@ -36,6 +36,7 @@ body{
 	font-family: sans-serif;
 	letter-spacing: 5px;
 	text-shadow: -0.5px -0.5px 0 #fff,-0.5px 0.5px #fff,0.5px 0.5px #fff,0.5px -0.5px #fff;
+	text-align: center;
 }
 .nav{
 	border-top: 1px solid #444;
@@ -58,12 +59,18 @@ body{
 .nav_list{
 	display: flex;
 	justify-content: space-evenly;
+	padding: 0;
 	margin-top: 8px;
 	list-style: none;
-	color: #fff;
-	font-size: 24px;
+}
 
+.nav_list li{
+	font-size: 22px;
+	transition-duration: 1s;
+}
 
+.nav_list li:hover{
+	font-size: 26px;
 }
 
 /*---------------- Content ------------------*/
@@ -112,7 +119,7 @@ body{
 	bottom: 0;
 	left: 0;
 	right: 0;
-    padding: 36px 16px 8px;
+    padding: 8px 16px;
 	background-image: linear-gradient(to bottom, transparent, #000);
 	color: #fff;
 }
@@ -150,8 +157,9 @@ body{
 }
 
 .port_news_content img {
-	width: 620px;
-	height: 348px;
+	max-width: 100%;
+	max-height: 348px;
+	
 }
 
 /*---------------- Content / News ------------------*/
@@ -174,4 +182,19 @@ body{
 .foot_text{
 	text-align: center;
 	color: #fff;
+}
+
+/*---------------- Responsive ------------------*/
+
+
+@media screen and (max-width:768px) {
+	.cards_news{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.text_title h2 {
+		font-size: 20px;
+	}
 }
